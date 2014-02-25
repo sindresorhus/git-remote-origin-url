@@ -8,29 +8,24 @@
     "url",
     "repo"
   ],
-  "homepage": "https://github.com/sindresorhus/git-remote-origin-url",
-  "bugs": "https://github.com/sindresorhus/git-remote-origin-url/issues",
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "http://sindresorhus.com"
   },
   "main": "url.js",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/sindresorhus/git-remote-origin-url.git"
-  },
+  "repository": "sindresorhus/git-remote-origin-url",
   "scripts": {
     "test": "mocha"
   },
   "dependencies": {
-    "gitconfiglocal": "0.0.0"
+    "gitconfiglocal": "^0.0.1"
   },
   "devDependencies": {
-    "mocha": "~1.9.0"
+    "mocha": "*"
   },
   "engines": {
-    "node": ">=0.8.0"
+    "node": ">=0.10.0"
   },
   "licenses": [
     {
