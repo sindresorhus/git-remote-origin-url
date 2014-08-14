@@ -13,7 +13,6 @@
     "email": "sindresorhus@gmail.com",
     "url": "http://sindresorhus.com"
   },
-  "main": "url.js",
   "repository": "sindresorhus/git-remote-origin-url",
   "scripts": {
     "test": "mocha"
@@ -27,12 +26,8 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "licenses": [
-    {
-      "type": "MIT"
-    }
-  ],
+  "license": "MIT",
   "files": [
-    "url.js"
+    "index.js"
   ]
 }
