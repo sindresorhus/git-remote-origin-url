@@ -1,10 +1,12 @@
 'use strict';
-var assert = require('assert');
+var test = require('ava');
 var originUrl = require('./');
 
-it('returns the remote origin url', function (cb) {
+test('returns the remote origin url', function (t) {
+	t.plan(2);
+
 	originUrl(__dirname, function (err, url) {
-		assert(url);
-		cb();
+		t.assert(!err, err);
+		t.assert(url);
 	});
 });
