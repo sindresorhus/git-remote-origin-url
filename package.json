@@ -18,7 +18,7 @@
     "test": "node test.js"
   },
   "dependencies": {
-    "gitconfiglocal": "0.0.3"
+    "gitconfiglocal": "^1.0.0"
   },
   "devDependencies": {
     "ava": "^0.0.4"
