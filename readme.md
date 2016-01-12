@@ -5,7 +5,7 @@
 
 ## Install
 
-```sh
+```
 $ npm install --save git-remote-origin-url
 ```
 
@@ -13,13 +13,23 @@ $ npm install --save git-remote-origin-url
 ## Usage
 
 ```js
-var originUrl = require('git-remote-origin-url');
+const gitRemoteOriginUrl = require('git-remote-origin-url');
 
-originUrl('path/to/repository', function (err, url) {
+gitRemoteOriginUrl().then(url => {
 	console.log(url);
-	//=> git@github.com:sindresorhus/git-remote-origin-url.git
+	//=> 'git@github.com:sindresorhus/git-remote-origin-url.git'
 });
 ```
+
+
+## gitRemoteOriginUrl([cwd])
+
+### cwd
+
+Type: `string`<br>
+Default: `process.cwd()`
+
+Working directory.
 
 
 ## License

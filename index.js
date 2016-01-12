@@ -1,20 +1,15 @@
 'use strict';
-var gitconfig = require('gitconfiglocal');
+const gitconfig = require('gitconfiglocal');
+const pify = require('pify');
 
-module.exports = function (dir, cb) {
-	gitconfig(dir, function (err, config) {
-		if (err) {
-			cb(err);
-			return;
-		}
-
+module.exports = dir => {
+	return pify(gitconfig)(dir || process.cwd()).then(config => {
 		var url = config.remote && config.remote.origin && config.remote.origin.url;
 
 		if (!url) {
-			cb(new Error('Couldn\'t find origin url'));
-			return;
+			throw new Error('Couldn\'t find origin url');
 		}
 
-		cb(null, url);
+		return url;
 	});
 };

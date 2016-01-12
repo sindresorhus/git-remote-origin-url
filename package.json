@@ -11,20 +11,22 @@
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
-    "url": "http://sindresorhus.com"
+    "url": "sindresorhus.com"
   },
   "repository": "sindresorhus/git-remote-origin-url",
   "scripts": {
-    "test": "node test.js"
+    "test": "xo && ava"
   },
   "dependencies": {
-    "gitconfiglocal": "^1.0.0"
+    "gitconfiglocal": "^1.0.0",
+    "pify": "^2.3.0"
   },
   "devDependencies": {
-    "ava": "^0.0.4"
+    "ava": "*",
+    "xo": "*"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "license": "MIT",
   "files": [

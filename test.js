@@ -1,12 +1,6 @@
-'use strict';
-var test = require('ava');
-var originUrl = require('./');
+import test from 'ava';
+import m from './';
 
-test('returns the remote origin url', function (t) {
-	t.plan(2);
-
-	originUrl(__dirname, function (err, url) {
-		t.assert(!err, err);
-		t.assert(url);
-	});
+test(async t => {
+	t.ok(await m(__dirname));
 });
