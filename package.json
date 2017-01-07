@@ -2,6 +2,7 @@
   "name": "git-remote-origin-url",
   "version": "2.0.0",
   "description": "Get the remote origin url of a git repository",
+  "typings": "index.d.ts",
   "keywords": [
     "git",
     "config",
