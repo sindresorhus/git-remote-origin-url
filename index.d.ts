@@ -1,7 +1,7 @@
 /**
-Get the remote origin url of a git repository.
+Get the remote origin url of a Git repository.
 
-@param cwd - Working directory. Default: `process.cwd()`.
+@param cwd - The current working directory. Default: `process.cwd()`.
 
 @example
 ```

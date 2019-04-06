@@ -1,6 +1,6 @@
 # git-remote-origin-url [![Build Status](https://travis-ci.org/sindresorhus/git-remote-origin-url.svg?branch=master)](https://travis-ci.org/sindresorhus/git-remote-origin-url)
 
-> Get the remote origin url of a git repository
+> Get the remote origin url of a Git repository
 
 
 ## Install
@@ -29,7 +29,7 @@ const gitRemoteOriginUrl = require('git-remote-origin-url');
 Type: `string`<br>
 Default: `process.cwd()`
 
-Working directory.
+The current working directory.
 
 
 ## License

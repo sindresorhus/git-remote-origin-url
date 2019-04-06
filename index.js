@@ -2,8 +2,10 @@
 const {promisify} = require('util');
 const gitconfig = require('gitconfiglocal');
 
-module.exports = async dir => {
-	const config = await promisify(gitconfig)(dir || process.cwd());
+const pGitconfig = promisify(gitconfig);
+
+module.exports = async (cwd = process.cwd()) => {
+	const config = await pGitconfig(cwd);
 	const url = config.remote && config.remote.origin && config.remote.origin.url;
 
 	if (!url) {
