@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save git-remote-origin-url
+$ npm install git-remote-origin-url
 ```
 
 
@@ -15,10 +15,10 @@ $ npm install --save git-remote-origin-url
 ```js
 const gitRemoteOriginUrl = require('git-remote-origin-url');
 
-gitRemoteOriginUrl().then(url => {
-	console.log(url);
+(async() => {
+	console.log(await gitRemoteOriginUrl());
 	//=> 'git@github.com:sindresorhus/git-remote-origin-url.git'
-});
+})();
 ```
 
 
@@ -34,4 +34,4 @@ Working directory.
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
