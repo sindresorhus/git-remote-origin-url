@@ -1,6 +1,6 @@
 import test from 'ava';
-import m from './';
+import gitRemoteOriginUrl from '.';
 
-test(async t => {
-	t.truthy(await m(__dirname));
+test('main', async t => {
+	t.truthy(await gitRemoteOriginUrl(__dirname));
 });
