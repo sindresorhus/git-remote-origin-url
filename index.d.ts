@@ -13,6 +13,6 @@ import gitRemoteOriginUrl = require('git-remote-origin-url');
 })();
 ```
 */
-declare function gitRemoteOriginUrl(cwd?: string): Promise<string>;
+declare function gitRemoteOriginUrl(cwd?: string, remoteName?: string): Promise<string>;
 
 export = gitRemoteOriginUrl;
