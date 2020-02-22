@@ -2,6 +2,7 @@
 Get the remote origin url of a Git repository.
 
 @param cwd - The current working directory. Default: `process.cwd()`.
+@param remoteName - The Git remote name. Default: `"origin"`.
 
 @example
 ```
