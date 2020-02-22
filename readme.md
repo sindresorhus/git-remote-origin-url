@@ -2,13 +2,11 @@
 
 > Get the remote origin url of a Git repository
 
-
 ## Install
 
 ```
 $ npm install git-remote-origin-url
 ```
-
 
 ## Usage
 
@@ -21,19 +19,18 @@ const gitRemoteOriginUrl = require('git-remote-origin-url');
 })();
 ```
 
-
 ## gitRemoteOriginUrl(cwd?)
 
 ### cwd
 
-Type: `string`<br>
+Type: `string`\
 Default: `process.cwd()`
 
 The current working directory.
 
 ### remoteName
 
-Type: `string`<br>
+Type: `string`\
 Default: `'origin'`
 
 The Git remote name.
