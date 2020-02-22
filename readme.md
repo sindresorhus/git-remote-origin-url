@@ -33,8 +33,8 @@ The current working directory.
 
 ### remoteName
 
-Type: `string`<br />
-Default: `"origin"`
+Type: `string`<br>
+Default: `'origin'`
 
 The Git remote name.
 
