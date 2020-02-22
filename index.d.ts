@@ -2,6 +2,7 @@
 Get the remote origin url of a Git repository.
 
 @param cwd - The current working directory. Default: `process.cwd()`.
+@param remoteName - The Git remote name. Default: `'origin'`.
 
 @example
 ```
@@ -13,6 +14,6 @@ import gitRemoteOriginUrl = require('git-remote-origin-url');
 })();
 ```
 */
-declare function gitRemoteOriginUrl(cwd?: string): Promise<string>;
+declare function gitRemoteOriginUrl(cwd?: string, remoteName?: string): Promise<string>;
 
 export = gitRemoteOriginUrl;
