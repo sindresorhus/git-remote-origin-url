@@ -1,4 +1,4 @@
-# git-remote-origin-url [![Build Status](https://travis-ci.org/sindresorhus/git-remote-origin-url.svg?branch=master)](https://travis-ci.org/sindresorhus/git-remote-origin-url)
+# git-remote-origin-url
 
 > Get the remote origin url of a Git repository
 
