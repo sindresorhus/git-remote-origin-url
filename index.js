@@ -1,10 +1,10 @@
-'use strict';
-const {promisify} = require('util');
-const gitconfig = require('gitconfiglocal');
+import {promisify} from 'node:util';
+import process from 'node:process';
+import gitconfig from 'gitconfiglocal';
 
 const pGitconfig = promisify(gitconfig);
 
-module.exports = async (cwd = process.cwd(), remoteName = 'origin') => {
+export default async function gitRemoteOriginUrl({cwd = process.cwd(), remoteName = 'origin'} = {}) {
 	const config = await pGitconfig(cwd);
 	const url = config.remote && config.remote[remoteName] && config.remote[remoteName].url;
 
@@ -13,4 +13,4 @@ module.exports = async (cwd = process.cwd(), remoteName = 'origin') => {
 	}
 
 	return url;
-};
+}

@@ -1,19 +1,28 @@
-/**
-Get the remote origin url of a Git repository.
+export type Options = {
+	/**
+	The current working directory.
 
-@param cwd - The current working directory. Default: `process.cwd()`.
-@param remoteName - The Git remote name. Default: `'origin'`.
+	@default process.cwd()
+	*/
+	readonly cwd?: string;
+
+	/**
+	The Git remote name.
+
+	@default 'origin'
+	*/
+	readonly remoteName?: string;
+};
+
+/**
+Get the remote origin URL of a Git repository.
 
 @example
 ```
-import gitRemoteOriginUrl = require('git-remote-origin-url');
+import gitRemoteOriginUrl from 'git-remote-origin-url';
 
-(async() => {
-	console.log(await gitRemoteOriginUrl());
-	//=> 'git@github.com:sindresorhus/git-remote-origin-url.git'
-})();
+console.log(await gitRemoteOriginUrl());
+//=> 'git@github.com:sindresorhus/git-remote-origin-url.git'
 ```
 */
-declare function gitRemoteOriginUrl(cwd?: string, remoteName?: string): Promise<string>;
-
-export = gitRemoteOriginUrl;
+export default function gitRemoteOriginUrl(options?: Options): Promise<string>;
